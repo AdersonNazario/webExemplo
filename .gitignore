@@ -1,1 +1,2 @@
-venv/
+/venv/
+/projeto1/db.sqlite3
