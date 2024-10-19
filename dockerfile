@@ -14,3 +14,8 @@ RUN pip install -r requirements.txt
 
 # Copy the project code into the container
 COPY . /app/
+
+EXPOSE 8000
+
+#CMD python projeto1/manage.py runserver
+CMD ["python3", "projeto1/manage.py", "runserver", "0.0.0.0:8000"]
