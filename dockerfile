@@ -20,4 +20,4 @@ EXPOSE 8000
 #CMD python projeto1/manage.py runserver
 #CMD ["python3", "projeto1/manage.py", "runserver", "0.0.0.0:8000"]
 
-CMD python projeto1/manage.py migrate && python projeto1/manage.py runserver 0.0.0.0:8000
+CMD python projeto1/manage.py makemigrations && python projeto1/manage.py migrate && python projeto1/manage.py runserver 0.0.0.0:8000
